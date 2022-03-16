@@ -1,12 +1,13 @@
 #include <iostream>
 
+int s = 4;
+
 void f()
 {
-    int i = 6;
-    int* p = &i;
-    std::cout << i << ' ' << p << std::endl;
+    int* p = &s;
+    std::cout << s << ' ' << p << std::endl;
 
-    delete p; // Ez hibát dob mivel a változók felszabadítása automatikusan történik
+    delete p; // Ez hibát dob mivel a globális változók felszabadítása automatikusan történik
 }
 
 int main()
