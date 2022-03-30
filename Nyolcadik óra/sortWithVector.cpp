@@ -12,8 +12,8 @@ int main()
 {
     //std::vector<int> v; //1. módszer (vektor létrehozás)
     std::vector<int> v( //2. módszer (vektor létrehozása)
-        std::istream_iterator<int>( std::cin ), //std::cin.begin()
-        std::istream_iterator<int>() );         //std::cin.end()
+        (std::istream_iterator<int>( std::cin )), //std::cin.begin()
+        std::istream_iterator<int>() );           //std::cin.end()
     int i;
     while( std::cin >> i )
     {
