@@ -25,6 +25,9 @@ int main()
     {
         std::cout << v[ i ] << ' ';  //1. módszer (kiírás)
     }*/
-    std::for_each(v.begin(), v.end(), print); //2. módszer (kiírás)
+    //std::for_each(v.begin(), v.end(), print); //2. módszer (kiírás)
+    std::copy( v.begin(), 
+             v.end(), 
+             std::ostream_iterator<int>( std::cout, " " ) ); //3. módszer (kiírás)
     std::endl( std::cout );
 }
