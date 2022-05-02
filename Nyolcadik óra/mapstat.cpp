@@ -30,5 +30,5 @@ int main()
         ++all;
     }
 
-    std::for_each( stat.begin(), stat.end(), Print(all) );
+    std::for_each( stat.begin(), stat.end(), Print( all ) );
 }
